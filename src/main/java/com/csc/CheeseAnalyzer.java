@@ -1,5 +1,12 @@
 package com.csc;
 
 public class CheeseAnalyzer {
-  // You can put source code here
+    public static void main(String[] args){
+CheeseReader reader = new CheeseReader("cheese_data.csv");
+CheeseList list = reader.read_cheeses();
+String output = Integer.toString(list.numberOfCheeses());
+
+CheeseWriter writer = new CheeseWriter("output.txt");
+writer.write_data(output);
+    }
 }
