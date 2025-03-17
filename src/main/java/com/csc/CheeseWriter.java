@@ -2,7 +2,7 @@ package com.csc;
 import java.io.FileOutputStream;
 
 public class CheeseWriter {
-    private String fileName;
+    private final String fileName;
 
     public CheeseWriter(String output_filename){
         fileName = output_filename;
